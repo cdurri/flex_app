@@ -1,0 +1,14 @@
+{
+  "name": "memorygame",
+  "version": "1.0.0",
+  "description": "## Install dependencies  Make sure you have [Node JS and NPM](https://nodejs.org/en/) (at least v6) installed on your computer.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

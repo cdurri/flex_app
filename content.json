@@ -1,0 +1,16 @@
+[
+  {
+    "title": "This heading can be three lines, or even four lines like this!",
+    "type": "content"
+  },
+  {
+    "title": "This heading can be a few lines",
+    "description": "A paragraph to describe the product here. This can be multiple lines.",
+    "type": "content"
+  },
+  {
+    "title": "Newsletter",
+    "description": "Receive weekly updates and deals directly to your inbox!",
+    "type": "subscribe-form"
+  }
+]
