@@ -64,7 +64,7 @@ body {
   font-size: 100%;
 
     @media screen and (max-width : 599px) {
-    .container-1 {
+    .container {
       .square-box {
         width: 80vw;
         height: 60vw;
@@ -117,7 +117,7 @@ body {
   }
 
   @media (max-width:1023px) and (min-width:600px) {
-    .container-1 {
+    .container {
       max-width: 560px;
       height: 560px;
       margin: 50px auto;
@@ -181,7 +181,7 @@ body {
   }
 
   @media screen and (min-width : 1024px) {
-    .container-1 {
+    .container {
       max-width: 560px;
       height: 560px;
       margin: 50px auto;

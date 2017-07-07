@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $(".update-button").click(function(e) {
-    e.preventDefault();
+  $(".update-button").click(function(event) {
+    event.preventDefault();
 
     var heading = $( this ).siblings('.heading-box').val();
     console.log(heading);
@@ -12,8 +12,9 @@ $(document).ready(function() {
     $('.second-layout').show();
   });
 
-  $("#subscribe-button").click(function(e) {
-    e.preventDefault();
+  $("#subscribe-button").click(function(event) {
+        console.log('Subscribe');
+    event.preventDefault();
 
     var emailinfo = $( this).siblings('.email-input').val();
     console.log(emailinfo);

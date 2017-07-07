@@ -3,78 +3,78 @@ body {
   font-family: 'Helvetica Neue', Arial, Helvetica;
   font-size: 100%; }
   @media screen and (max-width: 599px) {
-    body .container-1 .square-box {
+    body .container .square-box {
       width: 80vw;
       height: 60vw;
       margin: 20px;
       padding: 70px 30px 70px 30px;
       text-align: center;
       position: relative; }
-      body .container-1 .square-box h2, body .container-1 .square-box p {
+      body .container .square-box h2, body .container .square-box p {
         color: #fff; }
-      body .container-1 .square-box h2 {
+      body .container .square-box h2 {
         font-size: 29px; }
-      body .container-1 .square-box p {
+      body .container .square-box p {
         font-size: 17px; }
-      body .container-1 .square-box.blue {
+      body .container .square-box.blue {
         background-color: #5CACEE; }
-      body .container-1 .square-box.red {
+      body .container .square-box.red {
         background-color: #8b0000; }
-      body .container-1 .square-box.green {
+      body .container .square-box.green {
         background-color: #03c03c; }
-        body .container-1 .square-box.green input {
+        body .container .square-box.green input {
           width: 80%;
           height: 50px;
           text-align: center; }
-        body .container-1 .square-box.green button {
+        body .container .square-box.green button {
           display: block;
           width: 81%;
           height: 50px;
           margin: 0 auto;
           background-color: grey;
           color: #fff; }
-        body .container-1 .square-box.green button:hover {
+        body .container .square-box.green button:hover {
           background-color: white;
           color: #000000;
           border: 2px solid black;
           cursor: pointer; }
-      body .container-1 .square-box .update-form {
+      body .container .square-box .update-form {
         display: none; }
-        body .container-1 .square-box .update-form .heading-box {
+        body .container .square-box .update-form .heading-box {
           width: 90%;
           padding: 5px;
           margin-bottom: 10px;
           margin-top: -20px; }
-        body .container-1 .square-box .update-form .paragraph-box {
+        body .container .square-box .update-form .paragraph-box {
           width: 90%;
           padding: 5px;
           height: 100px;
           margin-bottom: 10px; }
-        body .container-1 .square-box .update-form button {
+        body .container .square-box .update-form button {
           width: 90%;
           height: 40px;
           background-color: grey;
           color: white; }
-        body .container-1 .square-box .update-form button:hover {
+        body .container .square-box .update-form button:hover {
           background-color: white;
           color: #000000;
           border: 2px solid black;
           cursor: pointer; }
-    body .container-1 .edit-links {
+    body .container .edit-links {
       position: absolute;
       top: 10px;
       right: 10px;
       color: #fff;
       display: none; }
-    body .container-1 .square-box:hover .edit-links {
+    body .container .square-box:hover .edit-links {
       display: block;
       cursor: pointer; } }
   @media (max-width: 1023px) and (min-width: 600px) {
-    body .container-1 {
+    body .container {
       max-width: 560px;
       height: 560px;
       margin: 50px auto; }
-      body .container-1 .square-box {
+      body .container .square-box {
         width: 50%;
         height: 50%;
         padding: 70px 30px 70px 30px;
@@ -82,76 +82,76 @@ body {
         display: inline-block;
         box-sizing: border-box;
         position: relative; }
-        body .container-1 .square-box h2, body .container-1 .square-box p {
+        body .container .square-box h2, body .container .square-box p {
           color: #fff; }
-        body .container-1 .square-box h2 {
+        body .container .square-box h2 {
           font-size: 24px; }
-        body .container-1 .square-box p {
+        body .container .square-box p {
           font-size: 14px; }
-        body .container-1 .square-box.blue {
+        body .container .square-box.blue {
           background-color: #5CACEE;
           float: left; }
-        body .container-1 .square-box.red {
+        body .container .square-box.red {
           background-color: #8b0000;
           float: right; }
-        body .container-1 .square-box.green {
+        body .container .square-box.green {
           background-color: #03c03c;
           width: 100%; }
-          body .container-1 .square-box.green input {
+          body .container .square-box.green input {
             width: 60%;
             height: 35px;
             text-align: center; }
-          body .container-1 .square-box.green button {
+          body .container .square-box.green button {
             width: 30%;
             height: 35px;
             background-color: grey;
             color: #fff; }
-          body .container-1 .square-box.green button:hover {
+          body .container .square-box.green button:hover {
             background-color: white;
             color: #000000;
             border: 2px solid black;
             cursor: pointer; }
-        body .container-1 .square-box .update-form {
+        body .container .square-box .update-form {
           display: none; }
-          body .container-1 .square-box .update-form .heading-box {
+          body .container .square-box .update-form .heading-box {
             width: 90%;
             padding: 5px;
             margin-bottom: 10px;
             margin-top: -20px; }
-          body .container-1 .square-box .update-form .paragraph-box {
+          body .container .square-box .update-form .paragraph-box {
             width: 90%;
             padding: 5px;
             height: 100px;
             margin-bottom: 10px; }
-          body .container-1 .square-box .update-form button {
+          body .container .square-box .update-form button {
             width: 90%;
             height: 50px;
             background-color: grey;
             color: white; }
-          body .container-1 .square-box .update-form button:hover {
+          body .container .square-box .update-form button:hover {
             background-color: white;
             color: #000000;
             border: 2px solid black;
             cursor: pointer; }
-      body .container-1 .second-layout {
+      body .container .second-layout {
         max-width: 316px;
         margin: 0 auto; }
-      body .container-1 .edit-links {
+      body .container .edit-links {
         position: absolute;
         top: 10px;
         right: 10px;
         color: #fff;
         display: none; }
-      body .container-1 .square-box:hover .edit-links {
+      body .container .square-box:hover .edit-links {
         display: block;
         cursor: pointer; } }
   @media screen and (min-width: 1024px) {
-    body .container-1 {
+    body .container {
       max-width: 560px;
       height: 560px;
       margin: 50px auto;
       position: relative; }
-      body .container-1 .square-box {
+      body .container .square-box {
         width: 50%;
         height: 50%;
         padding: 70px 30px 70px 30px;
@@ -159,73 +159,73 @@ body {
         box-sizing: border-box;
         display: inline-block;
         position: absolute; }
-        body .container-1 .square-box h2, body .container-1 .square-box p {
+        body .container .square-box h2, body .container .square-box p {
           color: #fff; }
-        body .container-1 .square-box h2 {
+        body .container .square-box h2 {
           font-size: 24px; }
-        body .container-1 .square-box p {
+        body .container .square-box p {
           font-size: 14px; }
-        body .container-1 .square-box.blue {
+        body .container .square-box.blue {
           background-color: #5CACEE;
           bottom: 0;
           left: 0; }
-        body .container-1 .square-box.red {
+        body .container .square-box.red {
           background-color: #8b0000; }
-        body .container-1 .square-box.green {
+        body .container .square-box.green {
           background-color: #03c03c;
           width: 50%;
           height: 100%;
           float: right;
           top: 0;
           right: 0; }
-          body .container-1 .square-box.green input {
+          body .container .square-box.green input {
             width: 80%;
             height: 50px;
             text-align: center; }
-          body .container-1 .square-box.green button {
+          body .container .square-box.green button {
             display: block;
             width: 80%;
             height: 40px;
             background-color: grey;
             color: #fff;
             margin: 0 auto; }
-          body .container-1 .square-box.green button:hover {
+          body .container .square-box.green button:hover {
             background-color: white;
             color: #000000;
             border: 2px solid black;
             cursor: pointer; }
-        body .container-1 .square-box .update-form {
+        body .container .square-box .update-form {
           display: none; }
-          body .container-1 .square-box .update-form .heading-box {
+          body .container .square-box .update-form .heading-box {
             width: 90%;
             padding: 5px;
             margin-bottom: 10px;
             margin-top: -20px; }
-          body .container-1 .square-box .update-form .paragraph-box {
+          body .container .square-box .update-form .paragraph-box {
             width: 90%;
             padding: 5px;
             height: 100px;
             margin-bottom: 10px; }
-          body .container-1 .square-box .update-form button {
+          body .container .square-box .update-form button {
             width: 90%;
             height: 40px;
             background-color: grey;
             color: white; }
-          body .container-1 .square-box .update-form button:hover {
+          body .container .square-box .update-form button:hover {
             background-color: white;
             color: #000000;
             border: 2px solid black;
             cursor: pointer; }
-      body .container-1 .second-layout {
+      body .container .second-layout {
         margin-top: 125px; }
-      body .container-1 .edit-links {
+      body .container .edit-links {
         position: absolute;
         top: 10px;
         right: 10px;
         color: #fff;
         display: none; }
-      body .container-1 .square-box:hover .edit-links {
+      body .container .square-box:hover .edit-links {
         display: block;
         cursor: pointer; }
-      body .container-1 #submit-reply {
+      body .container #submit-reply {
         display: none; } }
