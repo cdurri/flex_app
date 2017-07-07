@@ -1,5 +1,250 @@
+$blue: #5CACEE;
+$red: #8b0000;
+$green: #03c03c;
+$text-white: #fff;
+$text-black: #000000;
+
+/* mixins start */
+
+@mixin button-hover {
+  button:hover {
+    background-color: white;
+    color: $text-black;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+}
+
+@mixin edit-links-mixin {
+  .edit-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $text-white;
+    display: none;
+  }
+  .square-box:hover .edit-links {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@mixin heading-paragraph-mixin {
+  .heading-box {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+  }
+  .paragraph-box {
+    width: 90%;
+    padding: 5px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
+
+@mixin button-mixin {
+  button {
+    width: 90%;
+    height: 40px;
+    background-color: grey;
+    color: white;
+  }
+}
+
+@mixin heading-paragraph-text-mixin {
+  h2, p {
+    color: $text-white;
+  }
+}
 
 body {
   font-family: 'Helvetica Neue', Arial, Helvetica;
   font-size: 100%;
+
+    @media screen and (max-width : 599px) {
+    .container-1 {
+      .square-box {
+        width: 80vw;
+        height: 60vw;
+        margin: 20px;
+        padding: 70px 30px 70px 30px;
+        text-align: center;
+        position: relative;
+        @include heading-paragraph-text-mixin;
+        h2 {
+          font-size: 29px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &.blue {
+          background-color: $blue;
+        }
+        &.red {
+          background-color: $red;
+        }
+        &.green {
+          background-color: $green;
+          input {
+            width: 80%;
+            height: 50px;
+            text-align: center;
+          }
+          button {
+            display: block;
+            width: 81%;
+            height: 50px;
+            margin: 0 auto;
+            background-color: grey;
+            color: $text-white;
+          }
+          @include button-hover;
+        }
+        .update-form {
+          display: none;
+          @include heading-paragraph-mixin;
+          @include button-mixin;
+          @include button-hover;
+        }
+      }
+      .second-layout {
+
+      }
+      @include edit-links-mixin;
+    }
+  }
+
+  @media (max-width:1023px) and (min-width:600px) {
+    .container-1 {
+      max-width: 560px;
+      height: 560px;
+      margin: 50px auto;
+      .square-box {
+        width: 50%;
+        height: 50%;
+        padding: 70px 30px 70px 30px;
+        text-align: center;
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+        @include heading-paragraph-text-mixin;
+        h2 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 14px;
+        }
+        &.blue {
+          background-color: $blue;
+          float: left;
+        }
+        &.red {
+          background-color: $red;
+          float: right;
+        }
+        &.green {
+          background-color: $green;
+          width: 100%;
+          input {
+            width: 60%;
+            height: 35px;
+            text-align: center;
+          }
+          button {
+            width: 30%;
+            height: 35px;
+            background-color: grey;
+            color: $text-white;
+          }
+          @include button-hover;
+        }
+        .update-form {
+          display: none;
+          @include heading-paragraph-mixin;
+          button {
+            width: 90%;
+            height: 50px;
+            background-color: grey;
+            color: white;
+          }
+          @include button-hover;
+        }
+      }
+      .second-layout {
+        max-width: 316px;
+        margin: 0 auto;
+      }
+      @include edit-links-mixin;
+    }
+  }
+
+  @media screen and (min-width : 1024px) {
+    .container-1 {
+      max-width: 560px;
+      height: 560px;
+      margin: 50px auto;
+      position: relative;
+      .square-box {
+        width: 50%;
+        height: 50%;
+        padding: 70px 30px 70px 30px;
+        text-align: center;
+        box-sizing: border-box;
+        display: inline-block;
+        position: absolute;
+        @include heading-paragraph-text-mixin;
+        h2 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 14px;
+        }
+        &.blue {
+          background-color: $blue;
+          bottom: 0;
+          left: 0;
+        }
+        &.red {
+          background-color: $red;
+        }
+        &.green {
+          background-color: $green;
+          width: 50%;
+          height: 100%;
+          float: right;
+          top: 0;
+          right: 0;
+          input {
+            width: 80%;
+            height: 50px;
+            text-align: center;
+          }
+          button {
+            display: block;
+            width: 80%;
+            height: 40px;
+            background-color: grey;
+            color: $text-white;
+            margin: 0 auto;
+          }
+        @include button-hover;
+        }
+        .update-form {
+          display: none;
+          @include heading-paragraph-mixin;
+          @include button-mixin;
+          @include button-hover;
+        }
+      }
+      .second-layout {
+        margin-top: 125px;
+      }
+      @include edit-links-mixin;
+      #submit-reply {
+        display: none;
+      }
+    }
+}
 }
